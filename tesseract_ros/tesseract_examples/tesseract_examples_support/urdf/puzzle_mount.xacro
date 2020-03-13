@@ -7,12 +7,12 @@
     <link name="${prefix}ee_base" >
       <visual>
         <geometry>
-          <mesh filename="package://trajopt_ros_examples/meshes/puzzle_piece/puzzle_mount.stl" />
+          <mesh filename="package://tesseract_ros_examples/meshes/puzzle_piece/puzzle_mount.stl" />
         </geometry>>
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://trajopt_ros_examples/meshes/puzzle_piece/puzzle_mount.stl" />
+          <mesh filename="package://tesseract_ros_examples/meshes/puzzle_piece/puzzle_mount.stl" />
         </geometry>
       </collision>
     </link>
@@ -34,12 +34,12 @@
     <link name="${prefix}part" >
       <visual>
         <geometry>
-          <mesh filename="package://trajopt_ros_examples/meshes/puzzle_piece/puzzle_bent.dae" />
+          <mesh filename="package://tesseract_ros_examples/meshes/puzzle_piece/puzzle_bent.dae" />
         </geometry>
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://trajopt_ros_examples/meshes/puzzle_piece/puzzle_bent.dae" />
+          <mesh filename="package://tesseract_ros_examples/meshes/puzzle_piece/puzzle_bent.dae" />
         </geometry>
       </collision>
     </link>

@@ -113,9 +113,9 @@ void CarSeatExample::addSeats()
 //{
 //  AttachableObjectPtr obj(new AttachableObject());
 //  std::shared_ptr<shapes::Mesh>
-//  visual_mesh(shapes::createMeshFromResource("package://trajopt_ros_examples/meshes/car_seat/visual/car.dae"));
+//  visual_mesh(shapes::createMeshFromResource("package://tesseract_ros_examples/meshes/car_seat/visual/car.dae"));
 //  std::shared_ptr<shapes::Mesh>
-//  collision_mesh(shapes::createMeshFromResource("package://trajopt_ros_examples/meshes/car_seat/collision/car.stl"));
+//  collision_mesh(shapes::createMeshFromResource("package://tesseract_ros_examples/meshes/car_seat/collision/car.stl"));
 //  Eigen::Isometry3d seat_pose;
 //  seat_pose.setIdentity();
 

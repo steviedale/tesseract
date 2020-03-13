@@ -13,7 +13,7 @@
   <link name="workcell_base">
     <visual>
       <geometry>
-        <mesh filename="package://trajopt_ros_examples/meshes/pick_and_place/workcell.STL"/>
+        <mesh filename="package://tesseract_ros_examples/meshes/pick_and_place/workcell.STL"/>
       </geometry>
       <material name="light_gray"/>
     </visual>

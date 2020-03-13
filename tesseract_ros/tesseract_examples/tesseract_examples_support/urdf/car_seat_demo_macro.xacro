@@ -6,7 +6,7 @@
           <visual>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <geometry>
-              <mesh filename="package://trajopt_ros_examples/meshes/car_seat/visual/car.stl"/>
+              <mesh filename="package://tesseract_ros_examples/meshes/car_seat/visual/car.stl"/>
             </geometry>
             <material name="gray">
               <color rgba="1.0 0.25 0.0 1"/>
@@ -14,122 +14,122 @@
           </visual>
           <collision>
             <geometry>
-              <mesh filename="package://trajopt_ros_examples/meshes/car_seat/collision/car_1.stl"/>
+              <mesh filename="package://tesseract_ros_examples/meshes/car_seat/collision/car_1.stl"/>
             </geometry>
           </collision>
           <collision>
             <geometry>
-              <mesh filename="package://trajopt_ros_examples/meshes/car_seat/collision/car_2.stl"/>
+              <mesh filename="package://tesseract_ros_examples/meshes/car_seat/collision/car_2.stl"/>
             </geometry>
           </collision>
           <collision>
             <geometry>
-              <mesh filename="package://trajopt_ros_examples/meshes/car_seat/collision/car_3.stl"/>
+              <mesh filename="package://tesseract_ros_examples/meshes/car_seat/collision/car_3.stl"/>
             </geometry>
           </collision>
           <collision>
             <geometry>
-              <mesh filename="package://trajopt_ros_examples/meshes/car_seat/collision/car_4.stl"/>
+              <mesh filename="package://tesseract_ros_examples/meshes/car_seat/collision/car_4.stl"/>
             </geometry>
           </collision>
           <collision>
             <geometry>
-              <mesh filename="package://trajopt_ros_examples/meshes/car_seat/collision/car_5.stl"/>
+              <mesh filename="package://tesseract_ros_examples/meshes/car_seat/collision/car_5.stl"/>
             </geometry>
           </collision>
           <collision>
             <geometry>
-              <mesh filename="package://trajopt_ros_examples/meshes/car_seat/collision/car_6.stl"/>
+              <mesh filename="package://tesseract_ros_examples/meshes/car_seat/collision/car_6.stl"/>
             </geometry>
           </collision>
           <collision>
             <geometry>
-              <mesh filename="package://trajopt_ros_examples/meshes/car_seat/collision/car_7.stl"/>
+              <mesh filename="package://tesseract_ros_examples/meshes/car_seat/collision/car_7.stl"/>
             </geometry>
           </collision>
           <collision>
             <geometry>
-              <mesh filename="package://trajopt_ros_examples/meshes/car_seat/collision/car_8.stl"/>
+              <mesh filename="package://tesseract_ros_examples/meshes/car_seat/collision/car_8.stl"/>
             </geometry>
           </collision>
           <collision>
             <geometry>
-              <mesh filename="package://trajopt_ros_examples/meshes/car_seat/collision/car_9.stl"/>
+              <mesh filename="package://tesseract_ros_examples/meshes/car_seat/collision/car_9.stl"/>
             </geometry>
           </collision>
           <collision>
             <geometry>
-              <mesh filename="package://trajopt_ros_examples/meshes/car_seat/collision/car_10.stl"/>
+              <mesh filename="package://tesseract_ros_examples/meshes/car_seat/collision/car_10.stl"/>
             </geometry>
           </collision>
           <collision>
             <geometry>
-              <mesh filename="package://trajopt_ros_examples/meshes/car_seat/collision/car_11.stl"/>
+              <mesh filename="package://tesseract_ros_examples/meshes/car_seat/collision/car_11.stl"/>
             </geometry>
           </collision>
           <collision>
             <geometry>
-              <mesh filename="package://trajopt_ros_examples/meshes/car_seat/collision/car_12.stl"/>
+              <mesh filename="package://tesseract_ros_examples/meshes/car_seat/collision/car_12.stl"/>
             </geometry>
           </collision>
           <collision>
             <geometry>
-              <mesh filename="package://trajopt_ros_examples/meshes/car_seat/collision/car_13.stl"/>
+              <mesh filename="package://tesseract_ros_examples/meshes/car_seat/collision/car_13.stl"/>
             </geometry>
           </collision>
           <collision>
             <geometry>
-              <mesh filename="package://trajopt_ros_examples/meshes/car_seat/collision/car_14.stl"/>
+              <mesh filename="package://tesseract_ros_examples/meshes/car_seat/collision/car_14.stl"/>
             </geometry>
           </collision>
           <collision>
             <geometry>
-              <mesh filename="package://trajopt_ros_examples/meshes/car_seat/collision/car_15.stl"/>
+              <mesh filename="package://tesseract_ros_examples/meshes/car_seat/collision/car_15.stl"/>
             </geometry>
           </collision>
           <collision>
             <geometry>
-              <mesh filename="package://trajopt_ros_examples/meshes/car_seat/collision/car_16.stl"/>
+              <mesh filename="package://tesseract_ros_examples/meshes/car_seat/collision/car_16.stl"/>
             </geometry>
           </collision>
           <collision>
             <geometry>
-              <mesh filename="package://trajopt_ros_examples/meshes/car_seat/collision/car_17.stl"/>
+              <mesh filename="package://tesseract_ros_examples/meshes/car_seat/collision/car_17.stl"/>
             </geometry>
           </collision>
           <collision>
             <geometry>
-              <mesh filename="package://trajopt_ros_examples/meshes/car_seat/collision/car_18.stl"/>
+              <mesh filename="package://tesseract_ros_examples/meshes/car_seat/collision/car_18.stl"/>
             </geometry>
           </collision>
           <collision>
             <geometry>
-              <mesh filename="package://trajopt_ros_examples/meshes/car_seat/collision/car_19.stl"/>
+              <mesh filename="package://tesseract_ros_examples/meshes/car_seat/collision/car_19.stl"/>
             </geometry>
           </collision>
           <collision>
             <geometry>
-              <mesh filename="package://trajopt_ros_examples/meshes/car_seat/collision/car_20.stl"/>
+              <mesh filename="package://tesseract_ros_examples/meshes/car_seat/collision/car_20.stl"/>
             </geometry>
           </collision>
           <collision>
             <geometry>
-              <mesh filename="package://trajopt_ros_examples/meshes/car_seat/collision/car_21.stl"/>
+              <mesh filename="package://tesseract_ros_examples/meshes/car_seat/collision/car_21.stl"/>
             </geometry>
           </collision>
           <collision>
             <geometry>
-              <mesh filename="package://trajopt_ros_examples/meshes/car_seat/collision/car_22.stl"/>
+              <mesh filename="package://tesseract_ros_examples/meshes/car_seat/collision/car_22.stl"/>
             </geometry>
           </collision>
           <collision>
             <geometry>
-              <mesh filename="package://trajopt_ros_examples/meshes/car_seat/collision/car_23.stl"/>
+              <mesh filename="package://tesseract_ros_examples/meshes/car_seat/collision/car_23.stl"/>
             </geometry>
           </collision>
           <collision>
             <geometry>
-              <mesh filename="package://trajopt_ros_examples/meshes/car_seat/collision/car_24.stl"/>
+              <mesh filename="package://tesseract_ros_examples/meshes/car_seat/collision/car_24.stl"/>
             </geometry>
           </collision>
         </link>
@@ -137,14 +137,14 @@
           <visual>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <geometry>
-              <mesh filename="package://trajopt_ros_examples/meshes/car_seat/visual/fence_structure.dae"/>
+              <mesh filename="package://tesseract_ros_examples/meshes/car_seat/visual/fence_structure.dae"/>
             </geometry>
             <material name="gray"/>
           </visual>
           <visual>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <geometry>
-              <mesh filename="package://trajopt_ros_examples/meshes/car_seat/visual/fence_mesh.dae"/>
+              <mesh filename="package://tesseract_ros_examples/meshes/car_seat/visual/fence_mesh.dae"/>
             </geometry>
             <material name="gray"/>
           </visual>
@@ -160,7 +160,7 @@
           <visual>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <geometry>
-              <mesh filename="package://trajopt_ros_examples/meshes/car_seat/visual/conveyor.dae"/>
+              <mesh filename="package://tesseract_ros_examples/meshes/car_seat/visual/conveyor.dae"/>
             </geometry>
             <material name="gray"/>
           </visual>
@@ -176,14 +176,14 @@
           <visual>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <geometry>
-              <mesh filename="package://trajopt_ros_examples/meshes/car_seat/visual/rail_structure.dae"/>
+              <mesh filename="package://tesseract_ros_examples/meshes/car_seat/visual/rail_structure.dae"/>
             </geometry>
             <material name="gray"/>
           </visual>
           <visual>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <geometry>
-              <mesh filename="package://trajopt_ros_examples/meshes/car_seat/visual/rail_feet.dae"/>
+              <mesh filename="package://tesseract_ros_examples/meshes/car_seat/visual/rail_feet.dae"/>
             </geometry>
             <material name="gray"/>
           </visual>
@@ -199,7 +199,7 @@
           <visual>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <geometry>
-              <mesh filename="package://trajopt_ros_examples/meshes/car_seat/visual/carriage_plate.stl"/>
+              <mesh filename="package://tesseract_ros_examples/meshes/car_seat/visual/carriage_plate.stl"/>
             </geometry>
             <material name="gray"/>
           </visual>
@@ -215,14 +215,14 @@
           <visual>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <geometry>
-              <mesh filename="package://trajopt_ros_examples/meshes/car_seat/visual/end_effector_simple.stl"/>
+              <mesh filename="package://tesseract_ros_examples/meshes/car_seat/visual/end_effector_simple.stl"/>
             </geometry>
             <material name="gray"/>
           </visual>
           <collision>
             <origin ryp="0 0 0" xyz="0 0 0"/>
             <geometry>
-              <mesh filename="package://trajopt_ros_examples/meshes/car_seat/visual/end_effector_simple.stl"/>
+              <mesh filename="package://tesseract_ros_examples/meshes/car_seat/visual/end_effector_simple.stl"/>
             </geometry>
             <material name="yellow"/>
           </collision>
@@ -231,77 +231,77 @@
           <visual>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <geometry>
-              <mesh scale="0.9 0.9 0.9" filename="package://trajopt_ros_examples/meshes/car_seat/visual/seat.dae"/>
+              <mesh scale="0.9 0.9 0.9" filename="package://tesseract_ros_examples/meshes/car_seat/visual/seat.dae"/>
             </geometry>
             <material name="gray"/>
           </visual>
           <collision>
             <origin ryp="0 0 0" xyz="0 0 0"/>
             <geometry>
-              <mesh scale="0.9 0.9 0.9" filename="package://trajopt_ros_examples/meshes/car_seat/collision/seat_1.stl"/>
+              <mesh scale="0.9 0.9 0.9" filename="package://tesseract_ros_examples/meshes/car_seat/collision/seat_1.stl"/>
             </geometry>
             <material name="yellow"/>
           </collision>
           <collision>
             <origin ryp="0 0 0" xyz="0 0 0"/>
             <geometry>
-              <mesh scale="0.9 0.9 0.9" filename="package://trajopt_ros_examples/meshes/car_seat/collision/seat_2.stl"/>
+              <mesh scale="0.9 0.9 0.9" filename="package://tesseract_ros_examples/meshes/car_seat/collision/seat_2.stl"/>
             </geometry>
             <material name="yellow"/>
           </collision>
           <collision>
             <origin ryp="0 0 0" xyz="0 0 0"/>
             <geometry>
-              <mesh scale="0.9 0.9 0.9" filename="package://trajopt_ros_examples/meshes/car_seat/collision/seat_3.stl"/>
+              <mesh scale="0.9 0.9 0.9" filename="package://tesseract_ros_examples/meshes/car_seat/collision/seat_3.stl"/>
             </geometry>
             <material name="yellow"/>
           </collision>
           <collision>
             <origin ryp="0 0 0" xyz="0 0 0"/>
             <geometry>
-              <mesh scale="0.9 0.9 0.9" filename="package://trajopt_ros_examples/meshes/car_seat/collision/seat_4.stl"/>
+              <mesh scale="0.9 0.9 0.9" filename="package://tesseract_ros_examples/meshes/car_seat/collision/seat_4.stl"/>
             </geometry>
             <material name="yellow"/>
           </collision>
           <collision>
             <origin ryp="0 0 0" xyz="0 0 0"/>
             <geometry>
-              <mesh scale="0.9 0.9 0.9" filename="package://trajopt_ros_examples/meshes/car_seat/collision/seat_5.stl"/>
+              <mesh scale="0.9 0.9 0.9" filename="package://tesseract_ros_examples/meshes/car_seat/collision/seat_5.stl"/>
             </geometry>
             <material name="yellow"/>
           </collision>
           <collision>
             <origin ryp="0 0 0" xyz="0 0 0"/>
             <geometry>
-              <mesh scale="0.9 0.9 0.9" filename="package://trajopt_ros_examples/meshes/car_seat/collision/seat_6.stl"/>
+              <mesh scale="0.9 0.9 0.9" filename="package://tesseract_ros_examples/meshes/car_seat/collision/seat_6.stl"/>
             </geometry>
             <material name="yellow"/>
           </collision>
           <collision>
             <origin ryp="0 0 0" xyz="0 0 0"/>
             <geometry>
-              <mesh scale="0.9 0.9 0.9" filename="package://trajopt_ros_examples/meshes/car_seat/collision/seat_7.stl"/>
+              <mesh scale="0.9 0.9 0.9" filename="package://tesseract_ros_examples/meshes/car_seat/collision/seat_7.stl"/>
             </geometry>
             <material name="yellow"/>
           </collision>
           <collision>
             <origin ryp="0 0 0" xyz="0 0 0"/>
             <geometry>
-              <mesh scale="0.9 0.9 0.9" filename="package://trajopt_ros_examples/meshes/car_seat/collision/seat_8.stl"/>
+              <mesh scale="0.9 0.9 0.9" filename="package://tesseract_ros_examples/meshes/car_seat/collision/seat_8.stl"/>
             </geometry>
             <material name="yellow"/>
           </collision>
           <collision>
             <origin ryp="0 0 0" xyz="0 0 0"/>
             <geometry>
-              <mesh scale="0.9 0.9 0.9" filename="package://trajopt_ros_examples/meshes/car_seat/collision/seat_9.stl"/>
+              <mesh scale="0.9 0.9 0.9" filename="package://tesseract_ros_examples/meshes/car_seat/collision/seat_9.stl"/>
             </geometry>
             <material name="yellow"/>
           </collision>
           <collision>
             <origin ryp="0 0 0" xyz="0 0 0"/>
             <geometry>
-              <mesh scale="0.9 0.9 0.9" filename="package://trajopt_ros_examples/meshes/car_seat/collision/seat_10.stl"/>
+              <mesh scale="0.9 0.9 0.9" filename="package://tesseract_ros_examples/meshes/car_seat/collision/seat_10.stl"/>
             </geometry>
             <material name="yellow"/>
           </collision>
@@ -319,7 +319,7 @@
           <visual>
             <origin xyz="-0.25 0.011 0.05" rpy="1.570796 0 3.14159"/>
             <geometry>
-              <mesh filename="package://trajopt_ros_examples/meshes/car_seat/visual/ros_logo_solid.dae" scale="3 3 1.5"/>
+              <mesh filename="package://tesseract_ros_examples/meshes/car_seat/visual/ros_logo_solid.dae" scale="3 3 1.5"/>
             </geometry>
           </visual>
           <collision>

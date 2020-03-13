@@ -43,6 +43,11 @@ TESSERACT_COMMON_IGNORE_WARNINGS_POP
 #include <trajopt_utils/config.hpp>
 #include <trajopt_utils/logging.hpp>
 
+// <START> NEW_CODE
+#include <tesseract_motion_planners/trajopt/trajopt_motion_planner.h>
+#include <tesseract_motion_planners/trajopt/config/trajopt_planner_default_config.h>
+// <END> NEW_CODE
+
 using namespace trajopt;
 using namespace tesseract;
 using namespace tesseract_environment;
@@ -238,16 +243,39 @@ bool BasicCartesianExample::run()
   // Set Log Level
   util::gLogLevel = util::LevelError;
 
+/*
+<START> REMOVED CODE
   // Setup Problem
   TrajOptProb::Ptr prob;
   if (method_ == "cpp")
     prob = cppMethod();
   else
     prob = jsonMethod();
+<END> REMOVED CODE
+*/
 
   // Solve Trajectory
   ROS_INFO("basic cartesian plan example");
 
+// <START> NEW_CODE
+  tesseract_common::VectorIsometry3d tcp;
+
+  tesseract_motion_planners::TrajOptPlannerDefaultConfig::Ptr config =
+    std::make_shared<tesseract_motion_planners::TrajOptPlannerDefaultConfig>(
+      (tesseract::Tesseract::ConstPtr) tesseract_, "manipulator", "tool0", tcp
+    );
+
+  tesseract_motion_planners::TrajOptMotionPlanner motion_planner("basic_cartesian_motion_planner");
+
+  config->callbacks.push_back(PlotCallback(*config->prob, plotter));
+
+  motion_planner.setConfiguration(config);
+
+  tesseract_common::StatusCode result = motion_planner.solve()
+// <END> NEW_CODE
+
+/*
+<START> REMOVED CODE
   std::vector<ContactResultMap> collisions;
   tesseract_environment::StateSolver::Ptr state_solver = prob->GetEnv()->getStateSolver();
   ContinuousContactManager::Ptr manager = prob->GetEnv()->getContinuousContactManager();
@@ -284,7 +312,10 @@ bool BasicCartesianExample::run()
 
   ROS_INFO((found) ? ("Final trajectory is in collision") : ("Final trajectory is collision free"));
 
-  plotter->plotTrajectory(prob->GetKin()->getJointNames(), getTraj(opt.x(), prob->GetVars()));
+<END> REMOVED CODE
+*/
+  // TODO: figure out how to access "opt" from planner so that the next line can be remedied
+  //plotter->plotTrajectory(prob->GetKin()->getJointNames(), getTraj(opt.x(), prob->GetVars()));
 
   return true;
 }
