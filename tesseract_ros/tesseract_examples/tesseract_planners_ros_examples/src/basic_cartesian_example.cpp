@@ -1,16 +1,14 @@
 /**
  * @file basic_cartesian_plan.cpp
  * @brief Basic cartesian example implementation
- *
- * @author Levi Armstrong
+ * * @author Levi Armstrong
  * @date July 22, 2019
  * @version TODO
  * @bug No known bugs
  *
  * @copyright Copyright (c) 2017, Southwest Research Institute
  *
- * @par License
- * Software License Agreement (Apache License)
+ * @par License * Software License Agreement (Apache License)
  * @par
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -46,6 +44,8 @@ TESSERACT_COMMON_IGNORE_WARNINGS_POP
 // <START> NEW_CODE
 #include <tesseract_motion_planners/trajopt/trajopt_motion_planner.h>
 #include <tesseract_motion_planners/trajopt/config/trajopt_planner_default_config.h>
+#include <tesseract_motion_planners/core/types.h>
+#include <tesseract_motion_planners/core/waypoint.h>
 // <END> NEW_CODE
 
 using namespace trajopt;
@@ -259,6 +259,7 @@ bool BasicCartesianExample::run()
 
 // <START> NEW_CODE
   tesseract_common::VectorIsometry3d tcp;
+  tcp.push_back(Eigen::Isometry3d::Identity());
 
   tesseract_motion_planners::TrajOptPlannerDefaultConfig::Ptr config =
     std::make_shared<tesseract_motion_planners::TrajOptPlannerDefaultConfig>(
@@ -267,11 +268,31 @@ bool BasicCartesianExample::run()
 
   tesseract_motion_planners::TrajOptMotionPlanner motion_planner("basic_cartesian_motion_planner");
 
-  config->callbacks.push_back(PlotCallback(*config->prob, plotter));
+  // Add waypoints to config
+  double delta = 0.5 / steps_;
+  for (auto i = 0; i < steps_; ++i)
+  {
+    const Eigen::Vector3d position(0.5, -0.2 + delta * i, 0.62);
+    const Eigen::Quaterniond orientation(0.0, 0.0, 1.0, 0.0);
+    tesseract_motion_planners::Waypoint::Ptr waypoint = std::make_shared<tesseract_motion_planners::CartesianWaypoint>
+        (position, orientation, "tool0");
+    config->target_waypoints.push_back(waypoint);
+  }
 
   motion_planner.setConfiguration(config);
 
-  tesseract_common::StatusCode result = motion_planner.solve()
+  config->callbacks.push_back(PlotCallback(*config->prob, plotter));
+
+  tesseract_motion_planners::PlannerResponse response;
+
+  tesseract_common::StatusCode result = motion_planner.solve(response);
+
+  ROS_INFO("STATUS CODE:");
+  ROS_INFO(result.message().c_str());
+  ROS_INFO("TRAJECTORY:");
+  std::stringstream traj_str;
+  traj_str << response.joint_trajectory.trajectory;
+  ROS_INFO(traj_str.str().c_str());
 // <END> NEW_CODE
 
 /*
