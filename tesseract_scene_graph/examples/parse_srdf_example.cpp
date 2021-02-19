@@ -18,10 +18,7 @@ std::string toString(bool b) { return b ? "true" : "false"; }
 
 int main(int /*argc*/, char** /*argv*/)
 {
-  // Get the srdf file path
-  std::string srdf_file = std::string(TESSERACT_SUPPORT_DIR) + "/urdf/lbr_iiwa_14_r820.srdf";
-
-  // Create scene graph
+  // documentation:start:1: Create scene graph
   SceneGraph g;
 
   g.setName("kuka_lbr_iiwa_14_r820");
@@ -98,19 +95,27 @@ int main(int /*argc*/, char** /*argv*/)
   joint_tool0.child_link_name = "tool0";
   joint_tool0.type = JointType::FIXED;
   g.addJoint(joint_tool0);
+  // documentation:end:1: Create scene graph
 
-  // Parse the srdf
+  // documentation:start:2: Get the srdf file path
+  std::string srdf_file = std::string(TESSERACT_SUPPORT_DIR) + "/urdf/lbr_iiwa_14_r820.srdf";
+  // documentation:end:2: Get the srdf file path
+
+  // documentation:start:3: Parse the srdf
   SRDFModel srdf;
   bool success = srdf.initFile(g, srdf_file);
   CONSOLE_BRIDGE_logInform("SRDF loaded: %s", toString(success).c_str());
+  // documentation:end:3: Parse the srdf
 
-  // Add allowed collision matrix to scene graph
+  // documentation:start:4: Add allowed collision matrix to scene graph
   g.addAllowedCollision("link_1", "link_2", "adjacent");
 
   processSRDFAllowedCollisions(g, srdf);
+  // documentation:end:4: Add allowed collision matrix to scene graph
 
-  // Get info about allowed collision matrix
+  // documentation:start:5: Get info about allowed collision matrix
   AllowedCollisionMatrix::ConstPtr acm = g.getAllowedCollisionMatrix();
   const AllowedCollisionEntries& acm_entries = acm->getAllAllowedCollisions();
   CONSOLE_BRIDGE_logInform("ACM Number of entries: %d", acm_entries.size());
+  // documentation:end:5: Get info about allowed collision matrix
 }
