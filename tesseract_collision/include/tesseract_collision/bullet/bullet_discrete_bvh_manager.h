@@ -118,6 +118,8 @@ public:
 
   void contactTest(ContactResultMap& collisions, const ContactRequest& request) override;
 
+  void rayTest(RayResult& collisions, const RayRequest& request);
+
 #ifndef SWIG
   /**
    * @brief A a bullet collision object to the manager
@@ -142,6 +144,12 @@ private:
    * so it can be used to exit collision checking for compound shapes.
    */
   ContactTestData contact_test_data_;
+
+  /**
+   * @brief This is used when rayTest is called. It is also added as a user point to the collsion objects
+   * so it can be used to exit collision checking for compound shapes.
+   */
+  RayTestData ray_test_data_;
 
   /** @brief Filter collision objects before broadphase check */
   TesseractOverlapFilterCallback broadphase_overlap_cb_;
