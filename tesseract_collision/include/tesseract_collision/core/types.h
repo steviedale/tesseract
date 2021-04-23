@@ -383,7 +383,7 @@ struct RayRequest
   Eigen::Vector3d end {Eigen::Vector3d::Zero()};
 
   RayRequest(ContactTestType type = ContactTestType::ALL) : type(type) {};
-}
+};
 
 struct RayResult
 {
